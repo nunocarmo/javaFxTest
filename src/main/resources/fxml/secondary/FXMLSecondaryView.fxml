@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root prefHeight="122.0" prefWidth="505.0" type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <GridPane layoutX="20.0" layoutY="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="248.0" minWidth="10.0" prefWidth="234.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="231.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+          <VBox spacing="20">
+              <padding>
+                  <Insets bottom="10" left="10" right="10" top="10" />
+              </padding>
+      
+              <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Secondary View" />
+      
+              <HBox alignment="CENTER_LEFT" spacing="10">
+                  <Label text="Received message:" />
+                  <Label fx:id="secondaryLabel" style="-fx-font-style: italic;" />
+              </HBox>
+          </VBox>
+         <Label fx:id="lblTime" text="TIME" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      </children>
+   </GridPane>
+</fx:root>
